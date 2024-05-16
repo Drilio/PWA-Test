@@ -5,9 +5,8 @@ export default function ToDoList(){
     const [nextTask, setNextTask] = useState<string>("");
 
     useEffect(()=>{
-        const myTasks:string = localStorage.getItem('myTasks' )!
-        console.log(JSON.parse(myTasks))
-        setTasks(JSON.parse(myTasks))
+
+
     },[])
 
     const handleNewTask = useCallback((event:FormEvent)=>{
